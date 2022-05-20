@@ -199,4 +199,4 @@ Message variables auto-populate with a randomly selected group based on the scop
 [20]: /account_management/rbac/?tab=datadogapplication
 [21]: /monitors/guide/how-to-set-up-rbac-for-monitors/
 [22]: /monitors/create/
-[23]: /monitors/faq/what-are-recovery-thresholds/
+[23]: /monitors/guide/recovery-thresholds/
