@@ -4547,6 +4547,18 @@ api:
         - ListActiveMetrics
       unstable: []
       order: 1
+  - name: Submit distribution points
+    url: '#submit-distribution-points'
+    identifier: metrics-submit-distribution-points
+    parent: metrics
+    generated: true
+    params:
+      versions:
+        - v1
+      operationids:
+        - SubmitDistributionPoints
+      unstable: []
+      order: 1
   - name: Monitors
     url: /api/latest/monitors/
     identifier: monitors
@@ -5266,6 +5278,19 @@ api:
         - DeleteSLO
       unstable: []
       order: 5
+  - name: Search for SLOs
+    url: '#search-for-slos'
+    identifier: service-level-objectives-search-for-slos
+    parent: service-level-objectives
+    generated: true
+    params:
+      versions:
+        - v1
+      operationids:
+        - SearchSLO
+      unstable:
+        - v1
+      order: 1
   - name: Check if SLOs can be safely deleted
     url: '#check-if-slos-can-be-safely-deleted'
     identifier: service-level-objectives-check-if-slos-can-be-safely-deleted

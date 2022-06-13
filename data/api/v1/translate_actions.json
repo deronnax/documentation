@@ -161,6 +161,12 @@
     "request_description": "Update Dashboard request body.",
     "request_schema_description": "A dashboard is Datadog’s tool for visually tracking, analyzing, and displaying\nkey performance metrics, which enable you to monitor the health of your infrastructure."
   },
+  "SubmitDistributionPoints": {
+    "description": "The distribution points end-point allows you to post distribution data that can be graphed on Datadog’s dashboards.",
+    "summary": "Submit distribution points",
+    "request_description": "",
+    "request_schema_description": "The distribution points payload."
+  },
   "ListDowntimes": {
     "description": "Get all scheduled downtimes.",
     "summary": "Get all downtimes"
@@ -773,6 +779,10 @@
     "summary": "Update an SLO correction",
     "request_description": "The edited SLO correction object.",
     "request_schema_description": "An object that defines a correction to be applied to an SLO."
+  },
+  "SearchSLO": {
+    "description": "Get a list of service level objective objects for your organization.",
+    "summary": "Search for SLOs"
   },
   "DeleteSLO": {
     "description": "Permanently delete the specified service level objective object.\n\nIf an SLO is used in a dashboard, the `DELETE /v1/slo/` endpoint returns\na 409 conflict error because the SLO is referenced in a dashboard.",
