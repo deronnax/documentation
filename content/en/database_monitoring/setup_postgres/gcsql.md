@@ -206,7 +206,7 @@ To configure Database Monitoring metrics collection for an Agent running on a ho
    ```
 2. [Restart the Agent][2].
 
-For additional documentation on setting `project_id` and `instance_id` fields, please refer to the [postgres integration spec][3]
+See the [Postgres integration spec][3] for additional information on setting `project_id` and `instance_id` fields.
 
 [1]: https://github.com/DataDog/integrations-core/blob/master/postgres/datadog_checks/postgres/data/conf.yaml.example
 [2]: /agent/guide/agent-commands/#start-stop-and-restart-the-agent
@@ -270,9 +270,9 @@ pg_stat_statements_view: datadog.pg_stat_statements()
 pg_stat_activity_view: datadog.pg_stat_activity()
 ```
 
-For additional documentation on setting `project_id` and `instance_id` fields, please refer to the [postgres integration spec][2]
+See the [Postgres integration spec][2] for additional information on setting `project_id` and `instance_id` fields.
 
-To avoid exposing the `datadog` user's password in plain text, use the Agent's [secret management package][3] and declare the password using the `ENC[]` syntax, or see the [Autodiscovery template variables documentation][4] to learn how to pass the password as an environment variable.
+To avoid exposing the `datadog` user's password in plain text, use the Agent's [secret management package][3] and declare the password using the `ENC[]` syntax, or see the [Autodiscovery template variables documentation][4] on how to pass in the password as an environment variable.
 
 
 [1]: /agent/docker/integrations/?tab=docker
@@ -385,7 +385,7 @@ pg_stat_statements_view: datadog.pg_stat_statements()
 pg_stat_activity_view: datadog.pg_stat_activity()
 ```
 
-For additional documentation on setting `project_id` and `instance_id` fields, please refer to the [postgres integration spec][4]
+See the [Postgres integration spec][4] for additional information on setting `project_id` and `instance_id` fields.
 
 The Cluster Agent automatically registers this configuration and begin running the Postgres check.
 
