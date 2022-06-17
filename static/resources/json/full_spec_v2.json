@@ -32089,6 +32089,11 @@
                 "options": {
                   "description": "Options on rules.",
                   "properties": {
+                    "decreaseCriticalityBasedOnEnv": {
+                      "description": "If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce signal noise.\nThe severity is decreased by one level: `CRITICAL` in production becomes `HIGH` in non-production, `HIGH` becomes `MEDIUM` and so on. `INFO` remains `INFO`.\nThe decrement is applied when the environment tag of the signal starts with `staging`, `test` or `dev`.",
+                      "example": false,
+                      "type": "boolean"
+                    },
                     "detectionMethod": {
                       "description": "The detection method.",
                       "enum": [
@@ -32567,6 +32572,11 @@
           "options": {
             "description": "Options on rules.",
             "properties": {
+              "decreaseCriticalityBasedOnEnv": {
+                "description": "If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce signal noise.\nThe severity is decreased by one level: `CRITICAL` in production becomes `HIGH` in non-production, `HIGH` becomes `MEDIUM` and so on. `INFO` remains `INFO`.\nThe decrement is applied when the environment tag of the signal starts with `staging`, `test` or `dev`.",
+                "example": false,
+                "type": "boolean"
+              },
               "detectionMethod": {
                 "description": "The detection method.",
                 "enum": [
@@ -32836,6 +32846,11 @@
         ],
         "type": "object"
       },
+      "SecurityMonitoringRuleDecreaseCriticalityBasedOnEnv": {
+        "description": "If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce signal noise.\nThe severity is decreased by one level: `CRITICAL` in production becomes `HIGH` in non-production, `HIGH` becomes `MEDIUM` and so on. `INFO` remains `INFO`.\nThe decrement is applied when the environment tag of the signal starts with `staging`, `test` or `dev`.",
+        "example": false,
+        "type": "boolean"
+      },
       "SecurityMonitoringRuleDetectionMethod": {
         "description": "The detection method.",
         "enum": [
@@ -33048,6 +33063,11 @@
       "SecurityMonitoringRuleOptions": {
         "description": "Options on rules.",
         "properties": {
+          "decreaseCriticalityBasedOnEnv": {
+            "description": "If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce signal noise.\nThe severity is decreased by one level: `CRITICAL` in production becomes `HIGH` in non-production, `HIGH` becomes `MEDIUM` and so on. `INFO` remains `INFO`.\nThe decrement is applied when the environment tag of the signal starts with `staging`, `test` or `dev`.",
+            "example": false,
+            "type": "boolean"
+          },
           "detectionMethod": {
             "description": "The detection method.",
             "enum": [
@@ -33466,6 +33486,11 @@
           "options": {
             "description": "Options on rules.",
             "properties": {
+              "decreaseCriticalityBasedOnEnv": {
+                "description": "If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce signal noise.\nThe severity is decreased by one level: `CRITICAL` in production becomes `HIGH` in non-production, `HIGH` becomes `MEDIUM` and so on. `INFO` remains `INFO`.\nThe decrement is applied when the environment tag of the signal starts with `staging`, `test` or `dev`.",
+                "example": false,
+                "type": "boolean"
+              },
               "detectionMethod": {
                 "description": "The detection method.",
                 "enum": [
@@ -33872,6 +33897,11 @@
           "options": {
             "description": "Options on rules.",
             "properties": {
+              "decreaseCriticalityBasedOnEnv": {
+                "description": "If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce signal noise.\nThe severity is decreased by one level: `CRITICAL` in production becomes `HIGH` in non-production, `HIGH` becomes `MEDIUM` and so on. `INFO` remains `INFO`.\nThe decrement is applied when the environment tag of the signal starts with `staging`, `test` or `dev`.",
+                "example": false,
+                "type": "boolean"
+              },
               "detectionMethod": {
                 "description": "The detection method.",
                 "enum": [
@@ -73635,6 +73665,11 @@
                           "options": {
                             "description": "Options on rules.",
                             "properties": {
+                              "decreaseCriticalityBasedOnEnv": {
+                                "description": "If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce signal noise.\nThe severity is decreased by one level: `CRITICAL` in production becomes `HIGH` in non-production, `HIGH` becomes `MEDIUM` and so on. `INFO` remains `INFO`.\nThe decrement is applied when the environment tag of the signal starts with `staging`, `test` or `dev`.",
+                                "example": false,
+                                "type": "boolean"
+                              },
                               "detectionMethod": {
                                 "description": "The detection method.",
                                 "enum": [
@@ -74109,6 +74144,11 @@
                   "options": {
                     "description": "Options on rules.",
                     "properties": {
+                      "decreaseCriticalityBasedOnEnv": {
+                        "description": "If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce signal noise.\nThe severity is decreased by one level: `CRITICAL` in production becomes `HIGH` in non-production, `HIGH` becomes `MEDIUM` and so on. `INFO` remains `INFO`.\nThe decrement is applied when the environment tag of the signal starts with `staging`, `test` or `dev`.",
+                        "example": false,
+                        "type": "boolean"
+                      },
                       "detectionMethod": {
                         "description": "The detection method.",
                         "enum": [
@@ -74501,6 +74541,11 @@
                     "options": {
                       "description": "Options on rules.",
                       "properties": {
+                        "decreaseCriticalityBasedOnEnv": {
+                          "description": "If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce signal noise.\nThe severity is decreased by one level: `CRITICAL` in production becomes `HIGH` in non-production, `HIGH` becomes `MEDIUM` and so on. `INFO` remains `INFO`.\nThe decrement is applied when the environment tag of the signal starts with `staging`, `test` or `dev`.",
+                          "example": false,
+                          "type": "boolean"
+                        },
                         "detectionMethod": {
                           "description": "The detection method.",
                           "enum": [
@@ -75134,6 +75179,11 @@
                     "options": {
                       "description": "Options on rules.",
                       "properties": {
+                        "decreaseCriticalityBasedOnEnv": {
+                          "description": "If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce signal noise.\nThe severity is decreased by one level: `CRITICAL` in production becomes `HIGH` in non-production, `HIGH` becomes `MEDIUM` and so on. `INFO` remains `INFO`.\nThe decrement is applied when the environment tag of the signal starts with `staging`, `test` or `dev`.",
+                          "example": false,
+                          "type": "boolean"
+                        },
                         "detectionMethod": {
                           "description": "The detection method.",
                           "enum": [
@@ -75585,6 +75635,11 @@
                   "options": {
                     "description": "Options on rules.",
                     "properties": {
+                      "decreaseCriticalityBasedOnEnv": {
+                        "description": "If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce signal noise.\nThe severity is decreased by one level: `CRITICAL` in production becomes `HIGH` in non-production, `HIGH` becomes `MEDIUM` and so on. `INFO` remains `INFO`.\nThe decrement is applied when the environment tag of the signal starts with `staging`, `test` or `dev`.",
+                        "example": false,
+                        "type": "boolean"
+                      },
                       "detectionMethod": {
                         "description": "The detection method.",
                         "enum": [
@@ -75955,6 +76010,11 @@
                     "options": {
                       "description": "Options on rules.",
                       "properties": {
+                        "decreaseCriticalityBasedOnEnv": {
+                          "description": "If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce signal noise.\nThe severity is decreased by one level: `CRITICAL` in production becomes `HIGH` in non-production, `HIGH` becomes `MEDIUM` and so on. `INFO` remains `INFO`.\nThe decrement is applied when the environment tag of the signal starts with `staging`, `test` or `dev`.",
+                          "example": false,
+                          "type": "boolean"
+                        },
                         "detectionMethod": {
                           "description": "The detection method.",
                           "enum": [

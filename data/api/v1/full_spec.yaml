@@ -24626,7 +24626,7 @@ paths:
         type: idempotent
   /api/v1/org:
     get:
-      description: This endpoint returns data on your top-level organization.
+      description: List your managed organizations.
       operationId: ListOrgs
       responses:
         '200':
@@ -25399,6 +25399,10 @@ paths:
           description: Not Found
         '429':
           $ref: '#/components/responses/TooManyRequestsResponse'
+      security:
+      - apiKeyAuth: []
+        appKeyAuth: []
+      - AuthZ: []
       summary: Get all SLOs
       tags:
       - Service Level Objectives
@@ -25852,6 +25856,10 @@ paths:
           description: Not found
         '429':
           $ref: '#/components/responses/TooManyRequestsResponse'
+      security:
+      - apiKeyAuth: []
+        appKeyAuth: []
+      - AuthZ: []
       summary: Get an SLO's details
       tags:
       - Service Level Objectives
@@ -25947,6 +25955,10 @@ paths:
           description: Not Found
         '429':
           $ref: '#/components/responses/TooManyRequestsResponse'
+      security:
+      - apiKeyAuth: []
+        appKeyAuth: []
+      - AuthZ: []
       summary: Get Corrections For an SLO
       tags:
       - Service Level Objectives
@@ -26031,6 +26043,10 @@ paths:
           description: Not Found
         '429':
           $ref: '#/components/responses/TooManyRequestsResponse'
+      security:
+      - apiKeyAuth: []
+        appKeyAuth: []
+      - AuthZ: []
       summary: Get an SLO's history
       tags:
       - Service Level Objectives
