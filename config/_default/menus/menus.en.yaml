@@ -3850,6 +3850,30 @@ api:
     url: /api/latest/events/
     identifier: events
     generated: true
+  - name: Search events
+    url: '#search-events'
+    identifier: events-search-events
+    parent: events
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - ListEventsPost
+      unstable: []
+      order: 2
+  - name: Get a list of events
+    url: '#get-a-list-of-events'
+    identifier: events-get-a-list-of-events
+    parent: events
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - ListEventsGet
+      unstable: []
+      order: 1
   - name: Get an event
     url: '#get-an-event'
     identifier: events-get-an-event
